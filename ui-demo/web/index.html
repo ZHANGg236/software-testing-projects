@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云选商城 - UI 自动化练习</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="云选商城首页">
+        <span class="brand-mark">云</span>
+        <span>云选商城</span>
+      </a>
+
+      <div class="search-wrap">
+        <input
+          id="search-input"
+          data-testid="search-input"
+          type="search"
+          placeholder="搜索商品名称"
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="header-actions">
+        <button
+          id="login-button"
+          data-testid="login-button"
+          class="button button-secondary"
+          type="button"
+        >
+          登录
+        </button>
+        <div id="user-area" class="user-area" data-testid="user-area" hidden>
+          <span id="user-name" data-testid="user-name"></span>
+          <button id="logout-button" data-testid="logout-button" class="link-button" type="button">
+            退出
+          </button>
+        </div>
+        <button
+          id="cart-button"
+          data-testid="cart-button"
+          class="button button-primary"
+          type="button"
+        >
+          购物车 <span id="cart-count" data-testid="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">UI AUTOMATION DEMO</p>
+        <h1>今天想添置点什么？</h1>
+        <p class="subtitle">用于练习 Selenium 登录、搜索、加入购物车和结算流程。</p>
+      </div>
+      <label class="category-field">
+        <span>商品分类</span>
+        <select id="category-select" data-testid="category-select">
+          <option value="全部">全部</option>
+          <option value="键盘">键盘</option>
+          <option value="耳机">耳机</option>
+          <option value="鼠标">鼠标</option>
+        </select>
+      </label>
+    </section>
+
+    <section
+      id="product-grid"
+      class="product-grid"
+      data-testid="product-grid"
+      aria-live="polite"
+    ></section>
+
+    <p id="empty-result" class="empty-result" data-testid="empty-result" hidden>
+      没有找到符合条件的商品
+    </p>
+  </main>
+
+  <div id="login-modal" class="modal-backdrop" data-testid="login-modal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <button
+        id="close-login-button"
+        class="icon-button"
+        data-testid="close-login-button"
+        type="button"
+        aria-label="关闭登录窗口"
+      >
+        ×
+      </button>
+      <p class="eyebrow">WELCOME BACK</p>
+      <h2 id="login-title">账号登录</h2>
+      <p class="modal-tip">测试账号：student / 123456</p>
+
+      <form id="login-form" data-testid="login-form">
+        <label class="form-field">
+          <span>用户名</span>
+          <input
+            id="username"
+            data-testid="username-input"
+            name="username"
+            type="text"
+            placeholder="请输入用户名"
+            autocomplete="username"
+          >
+        </label>
+
+        <label class="form-field">
+          <span>密码</span>
+          <input
+            id="password"
+            data-testid="password-input"
+            name="password"
+            type="password"
+            placeholder="请输入密码"
+            autocomplete="current-password"
+          >
+        </label>
+
+        <p id="login-error" class="form-error" data-testid="login-error" hidden></p>
+
+        <button class="button button-primary button-block" data-testid="submit-login" type="submit">
+          登录
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <div id="cart-backdrop" class="drawer-backdrop" data-testid="cart-backdrop" hidden></div>
+  <aside
+    id="cart-drawer"
+    class="cart-drawer"
+    data-testid="cart-drawer"
+    aria-label="购物车"
+    hidden
+  >
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">YOUR CART</p>
+        <h2>购物车</h2>
+      </div>
+      <button
+        id="close-cart-button"
+        class="icon-button"
+        data-testid="close-cart-button"
+        type="button"
+        aria-label="关闭购物车"
+      >
+        ×
+      </button>
+    </div>
+
+    <div id="cart-items" class="cart-items" data-testid="cart-items"></div>
+
+    <div class="cart-summary">
+      <div class="total-row">
+        <span>合计</span>
+        <strong>¥<span id="cart-total" data-testid="cart-total">0.00</span></strong>
+      </div>
+      <button
+        id="checkout-button"
+        data-testid="checkout-button"
+        class="button button-primary button-block"
+        type="button"
+      >
+        提交订单
+      </button>
+      <div id="order-success" class="order-success" data-testid="order-success" hidden>
+        <strong>订单提交成功</strong>
+        <span>订单号：<b id="order-no" data-testid="order-no"></b></span>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

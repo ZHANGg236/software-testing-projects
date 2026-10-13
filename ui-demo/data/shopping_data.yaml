@@ -1,0 +1,41 @@
+search_cases:
+  - case_name: 按商品名称搜索键盘
+    keyword: 键盘
+    expected_names:
+      - 轻风机械键盘
+
+  - case_name: 搜索不存在的商品
+    keyword: 打印机
+    expected_names: []
+
+cart_cases:
+  - case_name: 加入一个机械键盘
+    products:
+      - KB-001
+    expected_item_count: 1
+    expected_cart_count: 1
+    expected_total: "299.00"
+
+  - case_name: 加入键盘和耳机
+    products:
+      - KB-001
+      - HP-002
+    expected_item_count: 2
+    expected_cart_count: 2
+    expected_total: "798.00"
+
+  - case_name: 同一商品加入两次
+    products:
+      - MS-003
+      - MS-003
+    expected_item_count: 1
+    expected_cart_count: 2
+    expected_total: "318.00"
+
+checkout_case:
+  case_name: 登录后加入商品并提交订单
+  products:
+    - KB-001
+    - HP-002
+  expected_cart_count: 2
+  expected_total: "798.00"

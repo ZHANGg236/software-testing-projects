@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">云听降噪耳机</title>
+  <desc id="desc">珊瑚色头戴式耳机产品示意图</desc>
+  <rect width="640" height="420" fill="#e7f4f1"/>
+  <ellipse cx="320" cy="345" rx="185" ry="28" fill="#5c978e" opacity="0.26"/>
+  <path d="M188 235V192c0-85 59-142 132-142s132 57 132 142v43" fill="none" stroke="#173b37" stroke-width="33" stroke-linecap="round"/>
+  <rect x="148" y="188" width="92" height="154" rx="45" fill="#e85d3f" stroke="#173b37" stroke-width="10"/>
+  <rect x="400" y="188" width="92" height="154" rx="45" fill="#e85d3f" stroke="#173b37" stroke-width="10"/>
+  <rect x="174" y="221" width="39" height="87" rx="19" fill="#fff4ce"/>
+  <rect x="427" y="221" width="39" height="87" rx="19" fill="#fff4ce"/>
+</svg>

@@ -1,0 +1,18 @@
+login_cases:
+  - case_name: 正确账号登录成功
+    username: student
+    password: "12345"
+    expected_success: true
+    expected_message: student
+
+  - case_name: 密码错误登录失败
+    username: student
+    password: wrong-password
+    expected_success: false
+    expected_message: 用户名或密码错误
+
+  - case_name: 用户名错误登录失败
+    username: unknown
+    password: "123456"
+    expected_success: false
+    expected_message: 用户名或密码错误

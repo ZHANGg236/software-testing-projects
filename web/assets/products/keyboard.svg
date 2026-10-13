@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">轻风机械键盘</title>
+  <desc id="desc">米白色机械键盘产品示意图</desc>
+  <rect width="640" height="420" fill="#fff4ce"/>
+  <ellipse cx="320" cy="332" rx="226" ry="32" fill="#d7c68f" opacity="0.42"/>
+  <g transform="translate(105 120)">
+    <rect width="430" height="190" rx="24" fill="#f7f1df" stroke="#253a38" stroke-width="9"/>
+    <g fill="#263b39">
+      <rect x="34" y="32" width="42" height="34" rx="7"/>
+      <rect x="86" y="32" width="42" height="34" rx="7"/>
+      <rect x="138" y="32" width="42" height="34" rx="7"/>
+      <rect x="190" y="32" width="42" height="34" rx="7"/>
+      <rect x="242" y="32" width="42" height="34" rx="7"/>
+      <rect x="294" y="32" width="42" height="34" rx="7"/>
+      <rect x="346" y="32" width="50" height="34" rx="7"/>
+      <rect x="34" y="78" width="50" height="34" rx="7"/>
+      <rect x="94" y="78" width="42" height="34" rx="7"/>
+      <rect x="146" y="78" width="42" height="34" rx="7"/>
+      <rect x="198" y="78" width="42" height="34" rx="7"/>
+      <rect x="250" y="78" width="42" height="34" rx="7"/>
+      <rect x="302" y="78" width="94" height="34" rx="7"/>
+      <rect x="34" y="124" width="82" height="34" rx="7"/>
+      <rect x="126" y="124" width="238" height="34" rx="7"/>
+      <rect x="374" y="124" width="22" height="34" rx="7"/>
+    </g>
+    <g fill="#e85d3f">
+      <rect x="294" y="32" width="42" height="34" rx="7"/>
+      <rect x="34" y="124" width="82" height="34" rx="7"/>
+    </g>
+  </g>
+</svg>

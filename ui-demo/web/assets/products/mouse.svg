@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">星轨无线鼠标</title>
+  <desc id="desc">青色无线鼠标产品示意图</desc>
+  <rect width="640" height="420" fill="#edf1fa"/>
+  <ellipse cx="320" cy="343" rx="142" ry="25" fill="#7284bc" opacity="0.28"/>
+  <path d="M320 70c-71 0-116 54-116 132v58c0 57 45 92 116 92s116-35 116-92v-58c0-78-45-132-116-132z" fill="#0d6b63" stroke="#173b37" stroke-width="10"/>
+  <path d="M320 72v137" stroke="#173b37" stroke-width="8"/>
+  <rect x="302" y="101" width="36" height="62" rx="18" fill="#fff4ce" stroke="#173b37" stroke-width="7"/>
+  <circle cx="320" cy="272" r="12" fill="#e85d3f"/>
+</svg>
